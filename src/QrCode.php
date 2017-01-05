@@ -1398,8 +1398,9 @@ class QrCode
         }
 
         $mib = $max_modules_1side;
-        if ($this->draw_quiet_zone)
+        if ($this->draw_quiet_zone) {
             $mib += 8;
+        }
 
         if ($this->size == 0) {
             $this->size = $mib * $qrcode_module_size;
